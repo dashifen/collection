@@ -4,10 +4,7 @@ namespace Dashifen\Collection;
 
 abstract class AbstractCollection implements CollectionInterface
 {
-    /**
-     * @var array 
-     */
-    protected $collection = [];
+    protected array $collection = [];
     
     /**
      * getCollection
