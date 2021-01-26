@@ -93,13 +93,13 @@ abstract class AbstractCollection implements CollectionInterface
      * 
      * Returns true if the specified index exists within the collection.
      * 
-     * @param mixed $index
+     * @param mixed $offset
      *
      * @return bool
      */
-    public function offsetExists ($index): bool
+    public function offsetExists ($offset): bool
     {
-        return isset($this->collection[$index]);
+        return isset($this->collection[$offset]);
     }
     
     /**
@@ -107,13 +107,13 @@ abstract class AbstractCollection implements CollectionInterface
      *
      * Returns the value at the specified index within the collection.
      *
-     * @param mixed $index
+     * @param mixed $offset
      *
      * @return mixed|null
      */
-    public function offsetGet ($index)
+    public function offsetGet ($offset)
     {
-        return $this->collection[$index] ?? null;
+        return $this->collection[$offset] ?? null;
     }
     
     /**
@@ -121,14 +121,14 @@ abstract class AbstractCollection implements CollectionInterface
      *
      * Adds the value to the collection at the specified index.
      *
-     * @param mixed $index
+     * @param mixed $offset
      * @param mixed $value
      *
      * @return void
      */
-    public function offsetSet ($index, $value)
+    public function offsetSet ($offset, $value)
     {
-        $this->collection[$index] = $value;
+        $this->collection[$offset] = $value;
     }
     
     /**
@@ -136,12 +136,12 @@ abstract class AbstractCollection implements CollectionInterface
      *
      * Removes the specified index from the collection.
      *
-     * @param mixed $index
+     * @param mixed $offset
      *
      * @return void
      */
-    public function offsetUnset ($index)
+    public function offsetUnset ($offset)
     {
-        unset($this->collection[$index]);
+        unset($this->collection[$offset]);
     }
 }
