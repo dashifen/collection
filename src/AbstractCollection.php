@@ -57,7 +57,7 @@ abstract class AbstractCollection implements CollectionInterface
    *
    * Returns the current index within the collection.
    *
-   * @return mixed|null
+   * @return int|string|null
    */
   public function key()
   {

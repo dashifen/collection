@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f16fa4a3ef8715d652ab666687b52ff",
-    "packages": [],
+    "content-hash": "43580c29edb1ba6a7b0fbd981f1c5060",
+    "packages": [
+        {
+            "name": "dashifen/exception",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dashifen/exception.git",
+                "reference": "e795e1d973e9f781eb3a8371b6299c852eef9bc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dashifen/exception/zipball/e795e1d973e9f781eb3a8371b6299c852eef9bc1",
+                "reference": "e795e1d973e9f781eb3a8371b6299c852eef9bc1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dashifen\\Exception\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Dashifen Kees",
+                    "email": "dashifen@dashifen.com",
+                    "homepage": "https://dashifen.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "a base class for exceptions in Dashifen's other work",
+            "support": {
+                "issues": "https://github.com/dashifen/exception/issues",
+                "source": "https://github.com/dashifen/exception/tree/1.2.0"
+            },
+            "time": "2019-12-12T14:26:49+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
@@ -13,7 +56,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1"
+        "php": ">=7.4"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
