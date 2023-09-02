@@ -37,7 +37,7 @@ abstract class AbstractCollection implements CollectionInterface
    *
    * @return mixed
    */
-  public function current()
+  public function current(): mixed
   {
     return current($this->collection);
   }
@@ -59,7 +59,7 @@ abstract class AbstractCollection implements CollectionInterface
    *
    * @return int|string|null
    */
-  public function key()
+  public function key(): int|string|null
   {
     return key($this->collection);
   }
@@ -97,7 +97,7 @@ abstract class AbstractCollection implements CollectionInterface
    *
    * @return bool
    */
-  public function offsetExists($offset): bool
+  public function offsetExists(mixed $offset): bool
   {
     return isset($this->collection[$offset]);
   }
@@ -111,7 +111,7 @@ abstract class AbstractCollection implements CollectionInterface
    *
    * @return mixed|null
    */
-  public function offsetGet($offset)
+  public function offsetGet(mixed $offset): mixed
   {
     return $this->collection[$offset] ?? null;
   }
@@ -126,7 +126,7 @@ abstract class AbstractCollection implements CollectionInterface
    *
    * @return void
    */
-  public function offsetSet($offset, $value)
+  public function offsetSet(mixed $offset, mixed $value): void
   {
     if (!is_null($offset)) {
       $this->collection[$offset] = $value;
@@ -144,7 +144,7 @@ abstract class AbstractCollection implements CollectionInterface
    *
    * @return void
    */
-  public function offsetUnset($offset)
+  public function offsetUnset(mixed $offset): void
   {
     unset($this->collection[$offset]);
   }
